@@ -11,7 +11,7 @@ require 'views/template/header.php'
                 <a href="index.php?controller=docgia&action=index" class="text-decoration-none btn btn-primary"><i class="bi bi-arrow-left"></i>  Quay Lại</a>
             </div>
             <div class="col-md-12 d-flex justify-content-center mb-3">
-                <h3>Quản Lý Độc Giả</h3>
+                <h3>Quản Lý Thông Tin Chi Tiết Độc Giả Của Thư Viện</h3>
             </div>
             <?php
                 require_once 'views/commons/message.php';

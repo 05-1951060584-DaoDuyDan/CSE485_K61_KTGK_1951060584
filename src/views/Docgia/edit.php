@@ -26,7 +26,22 @@ require 'views/template/header.php'
                         <input type="text" class="form-control" name="hoVaTen" id="validationCustom01" value="<?php echo isset($_POST['hoVaTen']) ? $_POST['hoVaTen'] : $dg['hovaten']?>" required>
                     </div>
                     <?php
-                        $gt = isset($_POST['hoVaTen']) ? $_POST['hoVaTen'] : $dg['hovaten'];
+                        $gt = isset($_POST['gioiTinh']) ? $_POST['gioiTinh'] : $dg['gioitinh'];
+                        if($gt=='Nam'){
+                    ?>
+                    <div>
+                        <span class="me-3">Giới tính</span>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gioiTinh" id="inlineRadio1" value="Nam" checked>
+                            <label class="form-check-label" for="inlineRadio1">Nam</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gioiTinh" id="inlineRadio2" value="Nữ">
+                            <label class="form-check-label" for="inlineRadio2">Nữ</label>
+                        </div>
+                    </div>
+                    <?php
+                        }else{
                     ?>
                     <div>
                         <span class="me-3">Giới tính</span>
@@ -35,11 +50,13 @@ require 'views/template/header.php'
                             <label class="form-check-label" for="inlineRadio1">Nam</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gioiTinh" id="inlineRadio2" value="Nữ">
-                            <label class="form-check-label" for="inlineRadio2"><?php echo $gt?></label>
+                            <input class="form-check-input" type="radio" name="gioiTinh" id="inlineRadio2" value="Nữ" checked>
+                            <label class="form-check-label" for="inlineRadio2">Nữ</label>
                         </div>
                     </div>
-
+                    <?php
+                        }
+                    ?>
                     <div class="col-md-6">
                         <label for="validationCustom02" class="form-label">Năm sinh</label>
                         <input type="text" class="form-control" name="namSinh" id="validationCustom02" value="<?php echo isset($_POST['namSinh']) ? $_POST['namSinh'] : $dg['namsinh']?>" required>

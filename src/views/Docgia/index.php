@@ -8,7 +8,7 @@ require 'views/template/header.php'
     <div class="container">
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center mb-3">
-                <h3>Danh Sách Độc Giả</h3>
+                <h3>Danh Sách Độc Giả Của Thư Viện</h3>
             </div>
             <div class="col-md-12 mb-3">
                 <a href="index.php?controller=docgia&action=admin"><button class="btn btn-primary">Xem chi tiết độc giả</button></a>

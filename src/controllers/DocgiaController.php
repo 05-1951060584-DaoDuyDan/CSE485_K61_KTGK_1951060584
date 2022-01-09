@@ -86,13 +86,13 @@ class DocgiaController{
                     'ngayHetHan' => $ngayHetHan,
                     'diaChi' => $diaChi,
                 ];
-                $isAdd = $DgModal->update($docgia);
-                if ($isAdd) {
-                    $_SESSION['success'] = "Thêm thành công";
+                $isUpdate = $DgModal->update($docgia);
+                if ($isUpdate) {
+                    $_SESSION['success'] = "Sửa thành công";
                     header("Location: index.php?controller=docgia&action=admin");
                 }
                 else {
-                    $_SESSION['error'] = "Thêm thất bại";
+                    $_SESSION['error'] = "Sửa thất bại";
                     header("Location: index.php?controller=docgia&action=error");
                 }
                 exit();
