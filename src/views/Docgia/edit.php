@@ -14,7 +14,7 @@ require 'views/template/header.php'
                 <a href="index.php?controller=docgia&action=admin" class="text-decoration-none btn btn-primary"><i class="bi bi-arrow-left"></i>  Quay Lại</a>
             </div>
             <div class="col-md-8 ms-auto me-auto">
-                <h4>Nhập thông tin người hiến máu</h4>
+                <h4>Sửa thông tin độc giả</h4>
                 <form class="row g-3 needs-validation" method="post" action="" novalidate>
                     <div class="col-md-12">
                         <label for="validationCustom01" class="form-label">Mã độc giả</label>

@@ -36,7 +36,7 @@ class DocgiaModal{
         $connection = $this->connectDb();
         //tạo và thực thi truy vấn
         $queryInsert = "INSERT INTO docgia (hovaten, gioitinh, namsinh, nghenghiep, ngaycapthe, ngayhethan, diachi)
-        VALUES ('{$docgia['hoVaTen']}', '{$docgia['gioiTinh']}', '{$docgia['namSinh']}', '{$docgia['ngheNghiep']}', '{$docgia['ngayCapThe']}','{$docgia['ngayHetHan']}','{$docgia['diaChi']}')";
+        VALUES ('{$docgia['hoVaTen']}' '{$docgia['gioiTinh']}', '{$docgia['namSinh']}', '{$docgia['ngheNghiep']}', '{$docgia['ngayCapThe']}','{$docgia['ngayHetHan']}','{$docgia['diaChi']}')";
         $isInsert = mysqli_query($connection, $queryInsert);
         $this->closeDb($connection);
         return $isInsert;
